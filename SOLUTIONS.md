@@ -1,6 +1,10 @@
 He creado dos ficheros, que corresponden a las funcionalidades dadas por los dos notebooks en lab\analysis. Estos dos ficheros con formato .py estructuran todas las funciones de tratamiento y procesamiento de datos, de ejecución, entrenamiento y validación del clasificador Random Forest y de visualización de gráficas.
 
-Por consiguiente, he creado la API (app.py) para definir la categoría de precio a un listado de valores dados a las características. Esta API opera en localhost y en el puerto 8000 y he utilizado las librerías uvicorn y FastAPI. La inicializo con el comando "uvicorn app:app --host 0.0.0.0 --port 8000 --reload", aunque dejo también la opción de inicializarla desde el código.
+Por consiguiente, he creado la API (app.py) para definir la categoría de precio a un listado de valores dados a las características. Esta API opera en localhost y en el puerto 8000 y he utilizado las librerías uvicorn y FastAPI. La inicializo con el comando 
+
+>> uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+También, dejo también la opción de inicializarla desde el código.
 
 El resultado de ejecutar el comando de POST:
 
