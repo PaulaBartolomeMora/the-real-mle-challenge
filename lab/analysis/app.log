@@ -1,0 +1,6 @@
+2024-09-11 11:10:53,495 - INFO - Starting prediction API
+2024-09-11 11:14:07,059 - INFO - Accessed home page
+2024-09-11 11:16:39,212 - INFO - Prediction request received: {'id': 1001, 'accommodates': 4, 'room_type': 'Entire home/apt', 'beds': 2, 'bedrooms': 1, 'bathrooms': 2.0, 'neighbourhood': 'Brooklyn', 'tv': 1, 'elevator': 1, 'internet': 0, 'latitude': 40.71383, 'longitude': -73.9658} from 127.0.0.1
+2024-09-11 11:16:39,215 - INFO - Input data transformed: [4, 3, 4, 2.0, 1]
+2024-09-11 11:16:42,257 - INFO - Prediction made: High for ID: 1001
+2024-09-12 08:30:26,514 - INFO - Accessed home page
