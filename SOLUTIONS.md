@@ -4,7 +4,7 @@ Por consiguiente, he creado la API (app.py) para definir la categoría de precio
 
 El resultado de ejecutar el comando de POST:
 
-Invoke-RestMethod -Uri 'http://127.0.0.1:8000/predict/' `
+>> Invoke-RestMethod -Uri 'http://127.0.0.1:8000/predict/' `
 >>   -Method 'Post' `
 >>   -Headers @{ "Content-Type" = "application/json" } `
 >>   -Body '{
@@ -24,18 +24,18 @@ Invoke-RestMethod -Uri 'http://127.0.0.1:8000/predict/' `
 
 Proporciona la siguiente respuesta:   
 
-"id price_category
-  -- --------------
-1001 High"
+>> "id price_category 1001 High"
 
 Por lo tanto, el modelo está dando los resultados esperados.
 
+
 Por último, he dockerizado la api y he utilizado los siguientes comandos:
 
-docker build -t api .
-docker run -p 8000:8000 api
+>> docker build -t api .
+>> 
+>> docker run -p 8000:8000 api
 
 Se comprueba que está activo el contenedor:
 
-CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS              PORTS                         
-56b6359fe9c2   api       "uvicorn app:app --h…"   2 minutes ago   Up About a minute   0.0.0.0:8000->8000/tcp   
+>> CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS              PORTS                         
+>> 56b6359fe9c2   api       "uvicorn app:app --h…"   2 minutes ago   Up About a minute   0.0.0.0:8000->8000/tcp   
